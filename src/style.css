@@ -90,8 +90,8 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+  padding: 0.2rem 1.5rem !important; /* Paddingni kamaytirdim */
+  font-size: 1rem !important; /* Font o‘lchamini kichikroq qildim */
 }
 
 .navbar-toggler {
@@ -103,10 +103,10 @@ button:focus {
 .navbar-toggler span {
   display: block !important;
   background-color: #7500fa !important;
-  height: 4px !important;
-  width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  height: 3px !important; /* Chiziq balandligini 4px dan 3px ga kamaytirdim */
+  width: 20px !important; /* Chiziq uzunligini 27px dan 20px ga kamaytirdim */
+  margin-top: 4px !important; /* Marginni 5px dan 4px ga kamaytirdim */
+  margin-bottom: 4px !important;
   transform: rotate(0deg) !important;
   left: 0 !important;
   opacity: 1 !important;
@@ -120,69 +120,69 @@ button:focus {
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
   transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
+  left: 10px !important; /* Leftni 12px dan 10px ga kamaytirdim */
+  top: 8px !important; /* Topni 10px dan 8px ga kamaytirdim */
   transform: rotate(135deg) !important;
   opacity: 0.9 !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 12px !important;
+  height: 10px !important; /* 12px dan 10px ga kamaytirdim */
   visibility: hidden !important;
   background-color: transparent !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
+  left: 10px !important; /* Leftni 12px dan 10px ga kamaytirdim */
+  top: 8px !important; /* Topni 10px dan 8px ga kamaytirdim */
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
+    padding: 0.5rem 1.5rem !important; /* Mobil uchun paddingni kamaytirdim */
+    font-size: 1.1rem !important; /* Mobil uchun font o‘lchamini 1.4rem dan 1.1rem ga kamaytirdim */
     background-color: #181a27 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
 
 .logo {
-  height: 5em !important;
-  width: 9em !important;
+  height: 3em !important; /* Logoning balandligini 5em dan 3em ga kamaytirdim */
+  width: 6em !important; /* Logoning kengligini 9em dan 6em ga kamaytirdim */
 }
 
 .navbar-nav .nav-link {
   color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-right: 0.8rem !important; /* Paddingni 1rem dan 0.8rem ga kamaytirdim */
+  padding-left: 0.8rem !important;
 }
 
 .nav-link {
-  padding: 0.8rem 1rem !important;
+  padding: 0.5rem 0.8rem !important; /* Paddingni 0.8rem 1rem dan 0.5rem 0.8rem ga kamaytirdim */
 }
 
 @media (max-width: 767px) {
   .nav-link {
-    padding: 0.7rem 1rem !important;
+    padding: 0.5rem 0.8rem !important; /* Mobil uchun paddingni 0.7rem 1rem dan 0.5rem 0.8rem ga kamaytirdim */
   }
 }
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 15px; /* Marginni 20px dan 15px ga kamaytirdim */
 }
 
 .navbar-nav .nav-item a {
@@ -196,7 +196,7 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 4px; /* Hover effekti balandligini 5px dan 4px ga kamaytirdim */
   width: 0;
   border-radius: 16px;
   background: #6e00fd;
@@ -209,7 +209,6 @@ button:focus {
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
-
 /* --------- */
 /* Home section */
 /* --------- */

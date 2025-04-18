@@ -22,17 +22,44 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Link color */
 .App-link {
   color: #61dafb;
 }
 
+/* Logo spin animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ✅ Media queries for responsiveness */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 1.5vmin);
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(10px + 1vmin);
+    padding: 8px;
+  }
+
+  .App-logo {
+    height: 25vmin;
   }
 }

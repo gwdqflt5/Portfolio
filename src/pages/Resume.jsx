@@ -3,21 +3,22 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 
-import Particle from '../components/Particle'
-import pdf from "../assets/sajib.pdf"
+import Particle from "../components/Particle";
+// import pdf from "../assets/sajib.pdf";
+import pdf from "../assets/muhammadali.pdf";
 
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/sajib.pdf`
+// const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/muhammadali.pdf`;
+const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/muhammadali.pdf`;
 
 const Resume = () => {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
-
     setWidth(window.innerWidth);
   }, []);
 
@@ -56,7 +57,7 @@ const Resume = () => {
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
